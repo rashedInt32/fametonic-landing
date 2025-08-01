@@ -1,19 +1,24 @@
 @import "tailwindcss";
 
 :root {
-  --primary: #fc004e;
-  --secondary: #10cbe0;
-  --text: #ffffff;
+  --primary: #FC004E;
+  --secondary: #00e7f9;
+  --secondary-gradient: #10cbe0;
   --gray: #ababab;
-  --body-bg: #010101;
-  --secondary-text: #00e7f9;
-  --secondary-text-shadow: #fc004e;
-  --button-bg: #fc004e;
-  --button-shadow: #00e7f9;
+  --body: #010101;
 }
 
 
 body {
-  background: var(--body-bg);
+  background: var(--body);
   color: var(--text);
+  font: 'Figtree', sans-serif;
+}
+
+.font-figtree {
+  font-family: 'Figtree', sans-serif;
+}
+
+.font-urbanist {
+  font-family: 'Urbanist', sans-serif;
 }
