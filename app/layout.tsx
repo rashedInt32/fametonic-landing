@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Urbanist, Figtree } from "next/font/google";
 import "@/styles/globals.css";
 import SalesBanner from "@/components/sales-banner";
+import Header from "@/components/header";
 
 const urbanist = Urbanist({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${urbanist.variable} ${figtree.variable} antialiased`}>
         <SalesBanner />
+        <Header />
         {children}
       </body>
     </html>
