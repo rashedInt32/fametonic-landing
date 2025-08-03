@@ -40,7 +40,7 @@ export default function Hero() {
                     />
                   </Button>
 
-                  <Paragraph className="pt-[10px]">
+                  <Paragraph className="pt-[10px] font-normal">
                     1-minute quiz for personalized Insights
                   </Paragraph>
                 </div>
@@ -57,13 +57,13 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="lg:-ml-14 lg:-mr-14 z-0">
+          <div className="lg:-ml-14 lg:-mr-14 lg:-mt-8 z-0 ">
             <Image
               src="/hero.png"
               alt="Fametonic Success Story"
-              width={500}
+              width={666}
               height={679}
-              className="w-full lg:h-[679px] object-contain"
+              className="w-full lg:min-w-[666px] lg:h-[700px] object-contain"
               priority
             />
           </div>
