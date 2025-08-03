@@ -10,14 +10,14 @@ export const List = ({
   itemClassName = "",
 }: ListProps) => {
   return (
-    <ul className={`space-y-4 ${className}`}>
+    <ul className={`space-y-[10px] ${className} py-[10px]`}>
       {items.map((item, index) => (
         <li
           key={index}
-          className={`flex items-start space-x-3 ${itemClassName}`}
+          className={`flex items-start space-x-2 ${itemClassName}`}
         >
-          <span className="font-figtree text-base font-semibold text-white leading-[22px]">
-            <span className="pr-2">✨</span> {item}
+          <span className="font-figtree text-base font-semibold text-white flex items-center">
+            <span className="mr-2 text-xl">✨</span> {item}
           </span>
         </li>
       ))}

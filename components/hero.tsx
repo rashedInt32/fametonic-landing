@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Heading, Paragraph, SubHeading } from "./ui/typography";
-import { Button } from "./ui/Button";
-import { List } from "./ui/List";
+import { Heading, Paragraph, SubHeading } from "@/components/ui/typography";
+import { Button } from "@/components/ui/Button";
+import { List } from "@/components/ui/List";
 
 const listItems = [
   "Start growing your influence right away—no waiting required!",
@@ -12,52 +12,58 @@ const listItems = [
 
 export default function Hero() {
   return (
-    <section className="w-full ">
+    <section className="w-full px-5 lg:px-0">
       <div className="mx-auto max-w-screen-lg h-full">
-        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 items-center">
           <div className="space-y-8 items-center flex flex-col justify-center z-10 relative lg:min-w-[516px]">
             <div>
-              <Heading>
+              <Heading className="text-center lg:text-left px-4 lg:px-0">
                 Want to Turn Social Media Into a Profitable Career?
               </Heading>
 
-              <SubHeading>
+              <SubHeading className="text-center lg:text-left pb-4 lg:pb-2">
                 Discover your way to success with Fametonic:
               </SubHeading>
 
               <List items={listItems} />
 
-              <div className="flex flex-col items-center lg:items-start space-y-2 text-white">
-                <Button>
-                  GET STARTED
-                  <Image
-                    src="/chevron-right.svg"
-                    width={11}
-                    height={6}
-                    alt="icon"
-                    className="w-auto h-auto ml-[10px]"
-                  />
-                </Button>
+              <div className="flex flex-col-reverse lg:flex-col lg:pt-[20px] space-y-[10px] lg:mb-0 mb-10 text-white ">
+                <div className="w-full lg:max-w-[313px] text-center ">
+                  <Button>
+                    GET STARTED
+                    <Image
+                      src="/chevron-right.svg"
+                      width={11}
+                      height={6}
+                      alt="icon"
+                      className="w-auto h-auto ml-[10px]"
+                    />
+                  </Button>
 
-                <Paragraph>1-minute quiz for personalized Insights</Paragraph>
+                  <Paragraph className="pt-[10px]">
+                    1-minute quiz for personalized Insights
+                  </Paragraph>
+                </div>
+                <div className="text-center lg:text-left">
+                  <Paragraph className="text-[var(--gray)] mt-5 lg:px-0 px-8">
+                    By clicking "Get Started", you agree with Terms and
+                    Conditions, Privacy Policy, Subscription Terms
+                  </Paragraph>
+                  <Paragraph className="text-[10px] text-[var(--gray)] mt-5 mb-10 lg:mb-0">
+                    Fametonic 2025 ©All Rights Reserved.
+                  </Paragraph>
+                </div>
               </div>
-              <Paragraph className="text-[var(--gray)] mt-5">
-                By clicking "Get Started", you agree with Terms and Conditions,
-                Privacy Policy, Subscription Terms
-              </Paragraph>
-              <Paragraph className="text-[10px] text-[var(--gray)] mt-5">
-                Fametonic 2025 ©All Rights Reserved.
-              </Paragraph>
             </div>
           </div>
 
-          <div className="relative  mb-8 lg:mb-0 lg:-ml-20 lg:-mr-20 z-0">
+          <div className="lg:-ml-14 lg:-mr-14 z-0">
             <Image
               src="/hero.png"
               alt="Fametonic Success Story"
               width={500}
               height={679}
-              className="w-auto h-[679px] object-contain"
+              className="w-full lg:h-[679px] object-contain"
               priority
             />
           </div>

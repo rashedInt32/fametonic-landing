@@ -24,7 +24,7 @@ export const SubHeading = ({ children, className }: TypeProps) => {
 
 export const Paragraph = ({ children, className }: TypeProps) => {
   return (
-    <p className={`font-figtree text-white font-medium text-xs ${className}`}>
+    <p className={`font-figtree  font-medium text-xs  ${className}`}>
       {children}
     </p>
   );
