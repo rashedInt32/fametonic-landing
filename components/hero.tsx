@@ -27,8 +27,8 @@ export default function Hero() {
 
               <List items={listItems} />
 
-              <div className="flex flex-col-reverse lg:flex-col lg:pt-[20px] space-y-[10px] lg:mb-0 mb-8 text-white ">
-                <div className="w-full lg:max-w-[313px] text-center ">
+              <div className="flex flex-col-reverse lg:flex-col lg:pt-[20px] space-y-[10px] lg:mb-0 mb-8 text-white">
+                <div className="w-full lg:max-w-[313px] text-center">
                   <Button>
                     GET STARTED
                     <Image
@@ -57,7 +57,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="lg:-ml-14 lg:-mr-14 lg:-mt-8 z-0 ">
+          <div className="lg:-ml-14 lg:-mr-14 lg:-mt-8 z-0">
             <Image
               src="/hero.png"
               alt="Fametonic Success Story"
