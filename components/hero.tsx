@@ -46,8 +46,8 @@ export default function Hero() {
                 </div>
                 <div className="text-center lg:text-left">
                   <Paragraph className="text-[var(--gray)] mt-3 lg:px-0 px-8">
-                    By clicking "Get Started", you agree with Terms and
-                    Conditions, Privacy Policy, Subscription Terms
+                    By clicking &quot;Get Started&quot;, you agree with Terms
+                    and Conditions, Privacy Policy, Subscription Terms
                   </Paragraph>
                   <Paragraph className="text-[10px] text-[var(--gray)] mt-5 mb-8 lg:mb-0">
                     Fametonic 2025 ©All Rights Reserved.
