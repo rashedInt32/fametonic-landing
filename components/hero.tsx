@@ -27,7 +27,7 @@ export default function Hero() {
 
               <List items={listItems} />
 
-              <div className="flex flex-col-reverse lg:flex-col lg:pt-[20px] space-y-[10px] lg:mb-0 mb-10 text-white ">
+              <div className="flex flex-col-reverse lg:flex-col lg:pt-[20px] space-y-[10px] lg:mb-0 mb-8 text-white ">
                 <div className="w-full lg:max-w-[313px] text-center ">
                   <Button>
                     GET STARTED
@@ -45,11 +45,11 @@ export default function Hero() {
                   </Paragraph>
                 </div>
                 <div className="text-center lg:text-left">
-                  <Paragraph className="text-[var(--gray)] mt-5 lg:px-0 px-8">
+                  <Paragraph className="text-[var(--gray)] mt-3 lg:px-0 px-8">
                     By clicking "Get Started", you agree with Terms and
                     Conditions, Privacy Policy, Subscription Terms
                   </Paragraph>
-                  <Paragraph className="text-[10px] text-[var(--gray)] mt-5 mb-10 lg:mb-0">
+                  <Paragraph className="text-[10px] text-[var(--gray)] mt-5 mb-8 lg:mb-0">
                     Fametonic 2025 ©All Rights Reserved.
                   </Paragraph>
                 </div>

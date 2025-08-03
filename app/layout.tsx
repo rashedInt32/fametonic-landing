@@ -26,11 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${urbanist.variable} ${figtree.variable} antialiased`}
-    >
-      <body className={`${figtree.variable} antialiased`}>
+    <html lang="en">
+      <body className={`${urbanist.variable} ${figtree.variable} antialiased`}>
         <SalesBanner />
         <Header />
         {children}
